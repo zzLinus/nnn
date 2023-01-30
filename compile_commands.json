@@ -1,0 +1,44 @@
+[
+ {
+  "directory": "/home/zzlinus/Dev/C/nnn",
+  "arguments": [
+   "gcc-11",
+   "-DNERD",
+   "-DICONS_INCLUDE=\"icons-generated-nerd.h\"",
+   "-std=c11",
+   "-Wall",
+   "-Wextra",
+   "-Wshadow",
+   "-O3",
+   "-D_DEFAULT_SOURCE",
+   "-D_XOPEN_SOURCE=600",
+   "-DICONS_GENERATE",
+   "-o",
+   "src/icons-hash-gen",
+   "src/icons-hash.c"
+  ],
+  "file": "src/icons-hash.c"
+ },
+ {
+  "directory": "/home/zzlinus/Dev/C/nnn",
+  "arguments": [
+   "gcc-11",
+   "-DNERD",
+   "-DICONS_INCLUDE=\"icons-generated-nerd.h\"",
+   "-std=c11",
+   "-Wall",
+   "-Wextra",
+   "-Wshadow",
+   "-O3",
+   "-D_DEFAULT_SOURCE",
+   "-D_XOPEN_SOURCE=600",
+   "-o",
+   "nnn",
+   "src/nnn.c",
+   "-lreadline",
+   "-lncursesw",
+   "-lpthread"
+  ],
+  "file": "src/nnn.c"
+ }
+]

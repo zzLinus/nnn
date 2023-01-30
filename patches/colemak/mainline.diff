@@ -17,12 +17,12 @@ index a2f54a23..8ff09d81 100644
 -	   "5Ret Rt l  Open%-20c'  First file/match\n"
 -	       "9g ^A  Top%-21cJ  Jump to entry/offset\n"
 -	       "9G ^E  End%-20c^J  Toggle auto-advance on open\n"
-+	       "9Up e  Up%-16cPgUp ^U  Page up\n"
-+	       "9Dn n  Down%-14cPgDn ^D  Page down\n"
-+	       "9Lt m  Parent%-12c~ ` @ -  ~, /, start, prev\n"
++	       "9Up u  Up%-16cPgUp ^U  Page up\n"
++	       "9Dn e  Down%-14cPgDn ^D  Page down\n"
++	       "9Lt n  Parent%-12c~ ` @ -  ~, /, start, prev\n"
 +	   "5Ret Rt i  Open%-20c'  First file/match\n"
-+	       "9g ^E  Top%-21cJ  Jump to entry/offset\n"
-+	       "9G ^N  End%-20c^J  Toggle auto-jump on open\n"
++	       "9g ^U  Top%-21cJ  Jump to entry/offset\n"
++	       "9G ^E  End%-20c^J  Toggle auto-jump on open\n"
  	      "8B (,)  Book(mark)%-11cb ^/  Select bookmark\n"
  		"a1-4  Context%-11c(Sh)Tab  Cycle/new context\n"
  	    "62Esc ^Q  Quit%-20cq  Quit context\n"
@@ -70,7 +70,7 @@ index cb4d6d69..8a73ac53 100644
  	/* Back */
  	{ KEY_LEFT,       SEL_BACK },
 -	{ 'h',            SEL_BACK },
-+	{ 'm',            SEL_BACK },
++	{ 'n',            SEL_BACK },
  	/* Inside or select */
  	{ KEY_ENTER,      SEL_OPEN },
  	{ '\r',           SEL_OPEN },
@@ -80,11 +80,11 @@ index cb4d6d69..8a73ac53 100644
 +	{ 'i',            SEL_NAV_IN },
  	/* Next */
 -	{ 'j',            SEL_NEXT },
-+	{ 'n',            SEL_NEXT },
++	{ 'e',            SEL_NEXT },
  	{ KEY_DOWN,       SEL_NEXT },
  	/* Previous */
 -	{ 'k',            SEL_PREV },
-+	{ 'e',            SEL_PREV },
++	{ 'u',            SEL_PREV },
  	{ KEY_UP,         SEL_PREV },
  	/* Page down */
  	{ KEY_NPAGE,      SEL_PGDN },
